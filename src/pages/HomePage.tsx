@@ -218,27 +218,7 @@ const HomePage: React.FC = () => {
                   <rect x="0" y="0" width="500" height="400" fill="url(#scanLines)" />
                 </g>
                 
-                {/* Ambient Particle System - Static Version */}
-                <g>
-                  {/* Generate 30 static particles with random positions */}
-                  {Array.from({ length: 30 }).map((_, i) => {
-                    const x = 50 + Math.random() * 400;
-                    const y = 50 + Math.random() * 300;
-                    const size = Math.random() * 2 + 0.5;
-                    const opacity = Math.random() * 0.5 + 0.1;
-                    
-                    return (
-                      <circle
-                        key={`particle-${i}`}
-                        cx={x}
-                        cy={y}
-                        r={size}
-                        fill="#ffffff"
-                        opacity={opacity}
-                      />
-                    );
-                  })}
-                </g>
+                {/* Ambient Particle System removed for cleaner look */}
                 
                 {/* Holographic Core */}
                 <g>
@@ -356,24 +336,7 @@ const HomePage: React.FC = () => {
                   
                   {/* Advanced Neural Network */}
                   <g>
-                    {/* Neural Network Nodes - Static Version */}
-                    {Array.from({ length: 12 }).map((_, i) => {
-                      const angle = (i * 30 * Math.PI) / 180;
-                      const radius = 20;
-                      const x = 250 + radius * Math.cos(angle);
-                      const y = 200 + radius * Math.sin(angle);
-                      
-                      return (
-                        <circle
-                          key={`neural-node-${i}`}
-                          cx={x}
-                          cy={y}
-                          r="2.5"
-                          fill="#ffffff"
-                          opacity="0.8"
-                        />
-                      );
-                    })}
+                    {/* Neural Network Nodes removed for cleaner look */}
                     
                     {/* Neural Network Connections */}
                     <g opacity="0.7">
@@ -442,23 +405,7 @@ const HomePage: React.FC = () => {
                         transition={{ duration: 1.5, delay: 0.8 + i * 0.1 }}
                       />
                       
-                      {/* Static Data Packet Visualization */}
-                      {Array.from({ length: 3 }).map((_, j) => {
-                        // Calculate positions along the path
-                        const pathOffset = j * 0.33; // Evenly space along path
-                        const packetSize = 4;
-                        
-                        return (
-                          <circle
-                            key={`data-packet-${i}-${j}`}
-                            cx={innerX + (outerX - innerX) * pathOffset}
-                            cy={innerY + (outerY - innerY) * pathOffset}
-                            r={packetSize}
-                            fill={j % 2 === 0 ? "#ff3e3e" : "#ffffff"}
-                            opacity={0.8}
-                          />
-                        );
-                      })}
+                      {/* Data packet visualization removed for cleaner look */}
                     </React.Fragment>
                   );
                 })}
@@ -466,7 +413,7 @@ const HomePage: React.FC = () => {
                 {/* Futuristic Endpoint Nodes */}
                 {[
                   { label: "WEBSITE", icon: "W" },
-                  { label: "MOBILE", icon: "M" },
+                  { label: "TELEGRAM", icon: "T" },
                   { label: "EMAIL", icon: "E" },
                   { label: "SOCIAL", icon: "S" },
                   { label: "WHATSAPP", icon: "W+" },
