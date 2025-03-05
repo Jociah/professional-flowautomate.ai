@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 512 512' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23FF1F1F'/%3E%3Crect x='156' y='136' width='200' height='240' rx='20' fill='white'/%3E%3Crect x='196' y='196' width='40' height='20' rx='5' fill='%23FF1F1F'/%3E%3Crect x='276' y='196' width='40' height='20' rx='5' fill='%23FF1F1F'/%3E%3Crect x='216' y='256' width='80' height='10' rx='5' fill='%23FF1F1F'/%3E%3Crect x='216' y='276' width='80' height='10' rx='5' fill='%23FF1F1F'/%3E%3Crect x='216' y='296' width='80' height='10' rx='5' fill='%23FF1F1F'/%3E%3Cpath d='M116 256 L 156 256' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M356 256 L 396 256' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M116 216 L 116 296' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3Cpath d='M396 216 L 396 296' stroke='white' stroke-width='10' stroke-linecap='round'/%3E%3Ccircle cx='116' cy='216' r='20' stroke='white' stroke-width='10' fill='none'/%3E%3Ccircle cx='396' cy='296' r='20' stroke='white' stroke-width='10' fill='none'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FlowAutomate - AI-powered chatbots and automation solutions tailored to your industry needs. Enhance customer engagement and streamline operations." />
+    <title>FlowAutomate - AI Automation Solutions</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Chatbot Widget -->
+    <div id="cd-widget"></div>
+    <script>
+      (function() {
+          if (window.chatWidgetScriptLoaded) return;
+          window.ChatWidgetConfig = {
+            projectId: "67c15d1de1e1ae9141c9598f", 
+          };
+
+          var chatWidgetScript = document.createElement("script");
+          chatWidgetScript.type = 'text/javascript';
+          chatWidgetScript.src = "https://storage.googleapis.com/cdwidget/dist/assets/js/main.js";
+          document.body.appendChild(chatWidgetScript);
+
+          window.chatWidgetScriptLoaded = true;
+      })();
+    </script>
+  </body>
+</html>
